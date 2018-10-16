@@ -1,7 +1,7 @@
 # Adds two values
 num1 = input("Number 1: ")
 num2 = input("Number 2: ")
-
+print("Numbers entered are "+num1+"\n"+num2)
 sum = float(num1) + float(num2)
 
 # Displaying the addition result
