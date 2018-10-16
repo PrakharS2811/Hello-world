@@ -1,2 +1,3 @@
 #rajitha gunathilake
-print("hellow world!")
+name = input("Enter your name: ")
+print("hello world! Greetings from" + name)
