@@ -6,16 +6,16 @@ public class AreaOfShapes
    public static void main(String[] args)
    {
        //print list of shapes
-      out.println("Pick your shape: \n1. Square\n2. Rectangle\n3. Circle\n4. Triangle\n5. Kite\n6. Parallelogram\n7. Rhombus\n8. Trapezoid");
+      out.println("Pick your shape: \n1. Square\n2. Rectangle\n3. Circle\n4. Triangle\n5. Kite\n6. Parallelogram\n7. Rhombus\n8. Trapezoid\n9. Cube\n10. Semi Circle ");
       
       //get user's shape until they give an int between 1 and 8
       int shape;
       boolean good = false;
       do
       {
-         out.print("Enter a number between 1 and 9: ");
+         out.print("Enter a number between 1 and 10: ");
          shape = scan.nextInt();
-         if (shape > 0 && shape < 10)
+         if (shape > 0 && shape < 11)
          {
             good = true;
          }
@@ -95,6 +95,12 @@ public class AreaOfShapes
             length = scan.nextDouble();
             out.println("Surface Area: " + 6(length * length));
             break;
+         case 10:
+         //Semi Circle
+            out.print("Enter the radius: ");
+            radius = scan.nextDouble();
+            out.println("Area: " + (0.5*((radius * radius) * Math.PI)));
+            break;  
       }
    }
 }
